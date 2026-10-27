@@ -4,7 +4,6 @@ import PageHead from '../components/PageHead.astro';
 import CourseRow from '../components/CourseRow.astro';
 import menu from '../data/menu.json';
 import drinks from '../data/drinks.json';
-import alacarte from '../data/alacarte.json';
 import { t, pick, yen, withBase, type Lang } from '../lib/i18n';
 const { lang } = Astro.props as { lang: Lang };
 const d = t(lang);
@@ -22,7 +21,6 @@ const groups = order
       <div class="filter menu-tabs" data-filter hidden role="group" aria-label={d.menu.title}>
         <button type="button" data-value="all" aria-pressed="true">{d.ui.all}</button>
         {groups.map((g) => <button type="button" data-value={g.id} aria-pressed="false">{labels[g.id]}<span class="tab-count">{g.items.length}</span></button>)}
-        <button type="button" data-value="alacarte" aria-pressed="false">{labels.alacarte}</button>
         <button type="button" data-value="drink" aria-pressed="false">{labels.drink}</button>
       </div>
       {groups.map((g) => (
@@ -34,37 +32,8 @@ const groups = order
           <ul class="course-list">
             {g.items.map((item) => <CourseRow item={item} lang={lang} />)}
           </ul>
-          {g.id === 'standard' && (
-            <aside class="omi-about" aria-labelledby="omi-about-title">
-              <div class="omi-about-text">
-                <p class="eyebrow">{(d.menu as any).omi.eyebrow}</p>
-                <h3 id="omi-about-title">{(d.menu as any).omi.title}</h3>
-                {(d.menu as any).omi.sections.map((x: any) => <><h4>{x.h}</h4><p>{x.body}</p></>)}
-                <p class="omi-about-note">{(d.menu as any).omi.note}</p>
-              </div>
-              <img src={withBase('images/omi-cattle.jpg')} alt={(d.menu as any).omi.alt} width="414" height="273" loading="lazy" decoding="async" />
-            </aside>
-          )}
         </section>
       ))}
-      <section class="menu-group" id="alacarte" data-cat="alacarte" aria-labelledby="alacarte-title">
-        <div class="menu-group-head">
-          <h2 id="alacarte-title">{labels.alacarte}</h2>
-          <p>{groupText.alacarte}</p>
-        </div>
-        <div class="alacarte-photos">
-          {alacarte.images.map(([file, alt]) => <img src={withBase('images/' + file)} alt={alt} width="800" height="600" loading="lazy" decoding="async" />)}
-        </div>
-        <div class="alacarte-grid">
-          {alacarte.sections.map((sec: any) => (
-            <div class="alacarte-block">
-              <h3>{pick(sec.title, lang)}</h3>
-              {sec.note && <p class="alacarte-note">{pick(sec.note, lang)}</p>}
-              <ul>{sec.items.map((it: any) => <li><span>{pick(it.name, lang)}</span><span>{yen(it.price)}</span></li>)}</ul>
-            </div>
-          ))}
-        </div>
-      </section>
       <section class="menu-group" id="drink" data-cat="drink" aria-labelledby="drink-title">
         <div class="menu-group-head">
           <h2 id="drink-title">{(d as any).drink.title}</h2>
@@ -72,18 +41,6 @@ const groups = order
         </div>
         <div class="drink-highlights">
           {drinks.highlights.map((h: any) => <div>{h.image && <img src={withBase('images/' + h.image)} alt={pick(h.title, lang)} width="1200" height="900" loading="lazy" decoding="async" />}<div class="dh-body"><h3>{pick(h.title, lang)}</h3><p>{pick(h.body, lang)}</p></div></div>)}
-        </div>
-        <h3 class="drink-plans-title">{(d as any).drink.listTitle}</h3>
-        <p class="muted drink-list-note">{(d as any).drink.listNote}</p>
-        <div class="alacarte-grid drink-list">
-          {(drinks as any).list.map((c: any) => (
-            <div class="alacarte-block">
-              <h3>{pick(c.title, lang)}</h3>
-              <p class="drink-tag">{pick((drinks as any).plans.find((pl: any) => pl.id === c.plan).name, lang)} {(d as any).drink.planTag}</p>
-              {c.note && <p class="alacarte-note">{pick(c.note, lang)}</p>}
-              <ul>{c.items.map((it: any) => <li><span>{pick(it.name, lang)}</span><span>{yen(it.price)}{it.from ? '〜' : ''}</span></li>)}</ul>
-            </div>
-          ))}
         </div>
         <h3 class="drink-plans-title">{(d as any).drink.plansTitle}</h3>
         <ul class="course-list drink-plans">
@@ -97,6 +54,7 @@ const groups = order
             </li>
           ))}
         </ul>
+        <p class="more-link"><a class="btn btn-ink" href={drinks.moreUrl} target="_blank" rel="noopener">{(d as any).drink.more}</a></p>
       </section>
       <p class="muted" style="margin-top:1.5rem">{d.menu.note}</p>
     </div>

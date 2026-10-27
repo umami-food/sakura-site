@@ -41,6 +41,7 @@ const jsonLd = {
   openingHoursSpecification: site.openingHoursSpec.map((o) => ({ '@type': 'OpeningHoursSpecification', ...o })),
   hasMenu: new URL(pagePath(lang, 'menu'), Astro.site).href,
   paymentAccepted: site.payments.join(', '),
+  award: site.award.name,
   currenciesAccepted: 'JPY',
   makesOffer: { '@type': 'AggregateOffer', priceCurrency: 'JPY', lowPrice: Math.min(...prices), highPrice: Math.max(...prices) },
 };
@@ -53,6 +54,10 @@ const jsonLd = {
     <div class="hero-logo">
       <img src={withBase('images/logo.webp')} alt={site.name.ja} width="480" height="537" />
     </div>
+    <a class="hero-award" href={site.award.url} target="_blank" rel="noopener">
+      <img src={withBase('images/' + site.award.image)} alt={(h as any).awardAlt} width="400" height="400" />
+      {(h as any).awardCaption && <span class="award-cap">{(h as any).awardCaption}</span>}
+    </a>
     <div class="hero-copy">
       <h1 id="hero-title">{titleLines.map((parts) => <span class="line">{parts.map((part, i) => (i % 2 ? <span class="gold">{part}</span> : part))}</span>)}</h1>
       <div class="hero-rule" aria-hidden="true">
@@ -111,20 +116,6 @@ const jsonLd = {
         {featured.map((item) => <CourseRow item={item} lang={lang} showCategory />)}
       </ul>
       <p class="more-link"><a class="btn btn-ink" href={pagePath(lang, 'menu')}>{d.ui.viewMenu}</a></p>
-    </div>
-  </section>
-
-  <section class="section signature" aria-labelledby="signature-title">
-    <div class="wrap signature-grid">
-      <img src={withBase('images/unkai-signature.jpg')} alt={d.categories.unkai} width="1000" height="1250" loading="lazy" decoding="async" />
-      <div class="signature-body">
-        <p class="eyebrow">{(h as any).unkaiEyebrow}</p>
-        <h2 id="signature-title">{(h as any).unkaiTitle}</h2>
-        <p class="signature-name">{d.categories.unkai}</p>
-        <p>{(d.menu as any).groups.unkai}</p>
-        <p class="signature-price">{(h as any).unkaiPrice}</p>
-        <a class="btn btn-primary" href={pagePath(lang, 'menu') + '#unkai'}>{(h as any).unkaiCta}</a>
-      </div>
     </div>
   </section>
 

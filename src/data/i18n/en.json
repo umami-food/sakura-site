@@ -44,14 +44,12 @@
     "smoking": "Smoking",
     "parking": "Parking",
     "careers": "Careers",
-    "tripadvisor": "Read reviews on Tripadvisor",
-    "tabelog": "Reviews on Tabelog"
+    "tripadvisor": "Read reviews on Tripadvisor"
   },
   "categories": {
-    "standard": "Sukiyaki & shabu-shabu",
+    "standard": "Shabu-shabu & sukiyaki",
     "tabehoudai": "All-you-can-eat",
-    "unkai": "Unkai-nabe",
-    "alacarte": "Add-ons",
+    "unkai": "Premium Sukiyaki (Unkai-nabe)",
     "drink": "Drinks"
   },
   "allergens": {
@@ -101,7 +99,7 @@
     "infoTitle": "Visit us",
     "conceptTitle": "One pot, two ways to enjoy Wagyu",
     "banquetTitle": "Private rooms for every occasion",
-    "banquetBody": "Private rooms for two, up to large rooms for groups of 60. Ideal for business dinners, celebrations, family gatherings and company parties.",
+    "banquetBody": "Private rooms for two, up to a fully private room for 60. Ideal for business dinners, celebrations, family gatherings and company parties.",
     "banquetCta": "See rooms and group plans",
     "lunchTitle": "By day, a charcoal-grilled eel restaurant.",
     "lunchBody": "At lunchtime we become 炭火うなぎSakura, serving Kansai-style eel grilled over charcoal. Unadon from ¥1,780, hitsumabushi from ¥2,780.",
@@ -127,37 +125,18 @@
     "snsCta": "View on Instagram",
     "inboundMore": "Guide for international guests",
     "homemadeTitle": "Warishita, sesame sauce and ponzu: all made in-house.",
-    "homemadeBody": "Our warishita is a house blend of premium tamari soy sauce and Hatcho miso, Nagoya's famous dark miso. Our sesame sauce and ponzu are house-made too, bringing out the best in our Wagyu.",
-    "unkaiEyebrow": "SIGNATURE SUKIYAKI",
-    "unkaiTitle": "Sukiyaki, turned into a one-of-a-kind experience.",
-    "unkaiPrice": "Kuroge Wagyu ¥9,980 / Omi beef ¥11,980 (tax included)",
-    "unkaiCta": "See Unkai-nabe courses"
+    "homemadeBody": "Our house-made warishita, sesame sauce and ponzu bring out the best in our Wagyu.",
+    "awardAlt": "Tabelog Sukiyaki & Shabu-shabu Top 100 Restaurants 2026",
+    "awardCaption": "Tabelog Top 100 2026"
   },
   "menu": {
     "title": "Menu",
     "lead": "All prices are per person and include tax. Drinks are ordered separately.",
-    "note": "Courses may change with seasonal availability. Please tell us about any allergies when you book. Children aged 6 and over need to order one course each (regular courses are the same price for children).",
+    "note": "Courses may change with seasonal availability. Please tell us about any allergies when you book.",
     "groups": {
       "standard": "Try shabu-shabu and sukiyaki side by side in two broths. Choose by type of meat. Warishita, sesame sauce and ponzu are all made in-house.",
-      "tabehoudai": "120 minutes (last order at 90 minutes). All-you-can-eat meat, seasonal vegetables, temari sushi and udon (the kumasu hassun and dessert are not included). Children aged 6–10 get ¥2,000 off the adult price. Everyone in the group must order the same all-you-can-eat course. Please avoid leaving excessive leftovers.",
-      "unkai": "A cloud of white cotton candy melts away like a sea of clouds to reveal the sukiyaki beneath. A sukiyaki experience that comes together before your eyes, only at Sakura.",
-      "alacarte": "Want a little more? Add whatever you like. All prices include tax."
-    },
-    "omi": {
-      "eyebrow": "About Omi beef",
-      "title": "Omi beef, carrying on over 400 years of history.",
-      "sections": [
-        {
-          "h": "History and land",
-          "body": "Raised amid the rich nature and water of Shiga Prefecture, Omi beef is one of Japan's leading wagyu brands, with a history of around 400 years."
-        },
-        {
-          "h": "Texture and flavor",
-          "body": "Fine-grained meat with a rich aroma. Tender, with fat that melts in the mouth for an elegant, savory flavor."
-        }
-      ],
-      "note": "Traceability records and certificates for our Omi beef are displayed at the entrance.",
-      "alt": "Omi cattle on a farm in Shiga Prefecture"
+      "tabehoudai": "Two hours of all-you-can-eat temari sushi, meat and seasonal vegetables. The appetizer box, rice porridge and matcha ice cream are not included.",
+      "unkai": "Unkai-nabe, our interactive sukiyaki served as a fluffy 'sea of clouds' hot pot. Perfect for dates and celebrations."
     }
   },
   "guide": {
@@ -202,8 +181,8 @@
       }
     ],
     "eggTitle": "Prefer not to eat raw egg?",
-    "eggBody": "You can also enjoy sukiyaki without the egg. Just let us know.",
-    "unkaiTitle": "For Unkai-nabe",
+    "eggBody": "We can serve a soft-boiled egg, or sukiyaki without egg. Just ask.",
+    "unkaiTitle": "For the Premium Sukiyaki Course (Unkai-nabe)",
     "unkaiBody": "We sear the beef in our house-made special warishita sauce."
   },
   "access": {
@@ -229,7 +208,7 @@
       },
       {
         "q": "Can you accommodate allergies?",
-        "a": "Yes. Please tell us about any allergies when you book, and we will accommodate them."
+        "a": "In most cases we can offer alternatives for egg, wheat, sesame and more. Please tell us when you book."
       },
       {
         "q": "Do you offer vegetarian or halal options?",
@@ -237,11 +216,11 @@
       },
       {
         "q": "Do you offer all-you-can-eat?",
-        "a": "Yes. Add ¥3,000 to the Omi Beef & Kuroge Wagyu Premium Tasting Course or the Kuroge Wagyu course, ¥4,500 to the Omi beef course, or ¥2,000 to the Hida pork course to make it all-you-can-eat. We also offer all-you-can-eat courses: Hida pork for ¥6,480, Kuroge Wagyu for ¥8,980 and Omi beef for ¥13,980. All-you-can-eat is 120 minutes (last order at 90 minutes), and children aged 6–10 get ¥2,000 off."
+        "a": "Yes. Add ¥3,000 to the Omi beef & Kuroge Wagyu course or the Kuroge Wagyu course, ¥4,500 to the Omi beef course, or ¥2,000 to the Hida pork course to make it all-you-can-eat. We also offer all-you-can-eat courses: Hida pork for ¥6,480, Kuroge Wagyu for ¥8,980, and Omi beef & Kuroge Wagyu for ¥13,980."
       },
       {
         "q": "Are children welcome?",
-        "a": "Yes, children of all ages are welcome, including infants. Please let us know when you book. Children aged 6 and over order one course each; regular courses are the same price as for adults, and all-you-can-eat courses are ¥2,000 off for children aged 6–10."
+        "a": "Yes, children of all ages are welcome, including infants. Please let us know when you book."
       },
       {
         "q": "Is there a dress code?",
@@ -292,7 +271,7 @@
     },
     "menu": {
       "title": "Menu & Prices | 和牛すき焼きしゃぶしゃぶSakura 名古屋店",
-      "description": "Nine courses from ¥4,480 to ¥13,980, tax included: Omi beef, Kuroge Wagyu and Hida pork sukiyaki & shabu-shabu, Unkai-nabe 'sea of clouds' sukiyaki, and all-you-can-eat. Extra meat and vegetables available."
+      "description": "Nine courses from ¥4,480 to ¥13,980, tax included: Omi beef, Kuroge Wagyu and Hida pork shabu-shabu & sukiyaki, plus our Premium Sukiyaki Course served as Unkai-nabe, an interactive 'sea of clouds' hot pot. All-you-can-eat upgrades available."
     },
     "guide": {
       "title": "How to Eat Sukiyaki & Shabu-Shabu | 和牛すき焼きしゃぶしゃぶSakura 名古屋店",
@@ -312,7 +291,7 @@
     },
     "banquet": {
       "title": "Private Rooms & Group Dining | 和牛すき焼きしゃぶしゃぶSakura 名古屋店",
-      "description": "Private rooms for 2 to 60 guests, next to Nagoya Station."
+      "description": "Private rooms for 2 up to a fully private room for 60, next to Nagoya Station."
     },
     "lunch": {
       "title": "Lunch | 炭火うなぎSakura (Charcoal-Grilled Eel), Nagoya Station",
@@ -349,13 +328,13 @@
       {
         "name": "Large private room",
         "capacity": "15–60 guests",
-        "body": "Spacious rooms for company parties and large groups. Some rooms are separated by noren curtains rather than doors."
+        "body": "A fully enclosed room with a door, for company parties and large groups."
       }
     ],
     "plansTitle": "Courses for groups",
     "plansLead": "Our 2-hour course works well for parties. Call us to discuss group size and budget.",
     "charterTitle": "Large group dining",
-    "charterBody": "We host parties of 15 to 60 guests in a private room. Tell us your group size, budget and preferred date.",
+    "charterBody": "We host parties of 15 to 60 guests in a fully private room. Tell us your group size, budget and preferred date.",
     "contact": "For group bookings, please call us.",
     "seatsNote": "Seating is assigned based on your group size. We are unable to accept requests for a specific room type."
   },
@@ -380,10 +359,8 @@
     "title": "Drinks",
     "lead": "Sake from across Japan, including regional brews, Japanese whisky, sours and highballs. All chosen to go well with Wagyu.",
     "plansTitle": "All-you-can-drink",
-    "taxNote": "Prices include tax.",
-    "listTitle": "Drinks by the glass",
-    "listNote": "All drink prices include tax.",
-    "planTag": "included"
+    "more": "Full drink list on Hotpepper Gourmet (Japanese)",
+    "taxNote": "Prices include tax."
   },
   "welcome": {
     "title": "Welcome, international guests",
