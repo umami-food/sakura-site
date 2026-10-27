@@ -344,7 +344,6 @@
     "title": "午餐",
     "eyebrow": "炭火うなぎSakura（炭火鳗鱼）",
     "lead": "白天是炭火鳗鱼专门店。以炭火烤得香气四溢的关西风鳗鱼。",
-    "notice": "午餐营业即将开始，开始日期将在Instagram公布。",
     "hoursLabel": "午餐营业时间",
     "lastEntry": "最后入店",
     "floor": "位于同一大楼4楼，请乘电梯。提供英文、简体中文及韩文菜单。",
@@ -355,7 +354,13 @@
     "dinnerTitle": "晚间：和牛寿喜烧・涮涮锅",
     "dinnerCta": "查看晚餐菜单",
     "imageAlt": "炭火烤制的鳗鱼盖饭",
-    "snsLink": "在Instagram查看最新消息"
+    "snsLink": "最新消息请见Instagram",
+    "grandOpen": "2026年11月1日（周日）盛大开业",
+    "preTitle": "10月31日（周六）前为预约制试营业！",
+    "preBody": "鳗鱼盖饭（半条）原价1,780日元，现仅需980日元（含税）！",
+    "preCta": "电话预约",
+    "preHow": "请通过电话或Instagram私信预约！",
+    "preDm": "通过Instagram私信预约"
   },
   "drink": {
     "title": "饮品",

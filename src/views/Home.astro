@@ -136,6 +136,8 @@ const jsonLd = {
         <img src={withBase('images/' + lunch.image)} alt="" width="952" height="550" loading="lazy" decoding="async" />
         <div class="entrance-body">
           <p class="eyebrow" lang="ja">{lunch.brand}</p>
+          <p class="lunch-flag">{(d as any).lunch.grandOpen}</p>
+          {Date.now() <= Date.parse(lunch.preOpenUntil) && <p class="lunch-pre-mini" data-until={lunch.preOpenUntil}>{(d as any).lunch.preTitle}<br />{(d as any).lunch.preBody}<br />{(d as any).lunch.preHow}</p>}
           <h2>{h.lunchTitle}</h2>
           <p>{h.lunchBody}</p>
           <span class="btn btn-primary">{h.lunchCta}</span>
@@ -251,4 +253,9 @@ const jsonLd = {
       </div>
     </div>
   </section>
+  <script is:inline>
+    document.querySelectorAll('.lunch-pre-mini[data-until]').forEach(function (el) {
+      if (Date.now() > Date.parse(el.getAttribute('data-until'))) el.remove();
+    });
+  </script>
 </Base>

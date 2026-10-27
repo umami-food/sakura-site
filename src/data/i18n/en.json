@@ -344,7 +344,6 @@
     "title": "Lunch",
     "eyebrow": "炭火うなぎSakura (Charcoal-Grilled Eel)",
     "lead": "By day, a charcoal-grilled eel restaurant. Kansai-style eel, grilled over charcoal until fragrant.",
-    "notice": "Lunch service is starting soon. We will announce the opening date on Instagram.",
     "hoursLabel": "Lunch hours",
     "lastEntry": "Last entry",
     "floor": "4th floor of the same building. Please take the elevator. Menus in English, Chinese (Simplified) and Korean.",
@@ -355,7 +354,13 @@
     "dinnerTitle": "By night: Wagyu sukiyaki & shabu-shabu",
     "dinnerCta": "See the dinner menu",
     "imageAlt": "Charcoal-grilled eel rice bowl",
-    "snsLink": "See updates on Instagram"
+    "snsLink": "Latest news on Instagram",
+    "grandOpen": "Grand opening: Sunday, November 1, 2026",
+    "preTitle": "Pre-opening until Saturday, October 31 — reservations only!",
+    "preBody": "Our Unadon (1/2 eel), normally ¥1,780, is just ¥980 (tax included)!",
+    "preCta": "Call to reserve",
+    "preHow": "Please reserve by phone or Instagram DM!",
+    "preDm": "Reserve via Instagram DM"
   },
   "drink": {
     "title": "Drinks",

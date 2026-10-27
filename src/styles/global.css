@@ -830,3 +830,20 @@ p + p { margin-top: 1em; }
 .lunch-sns { margin-top: 0.9rem; }
 .lunch-sns a { display: inline-flex; align-items: center; gap: 0.45rem; color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--line-strong); }
 .lunch-sns svg { width: 1.1rem; height: 1.1rem; }
+
+/* ランチ：グランドオープン・プレオープン */
+.lunch-open { margin-top: 1.25rem; padding: 1.1rem 1.25rem; border: 1px solid var(--line-strong); background: rgba(194, 160, 106, 0.08); }
+.lunch-open-date { font-family: var(--serif); font-weight: 600; font-size: var(--step-1); color: #fff; }
+.lunch-pre { margin-top: 0.8rem; padding-top: 0.8rem; border-top: 1px dashed var(--line-strong); }
+.lunch-pre-title { color: var(--gold); font-weight: 700; }
+.lunch-pre-body { margin: 0.3rem 0 0.9rem; color: #fff; }
+.lunch-open-sns { display: inline-block; margin-top: 0.8rem; color: var(--gold); font-size: var(--step--1); }
+.lunch-flag { display: inline-block; align-self: flex-start; background: var(--gold); color: #1a1408; font-weight: 700; font-size: var(--step--1); padding: 0.25rem 0.7rem; border-radius: 2px; }
+.lunch-pre-mini { color: #fff; font-size: var(--step--1); line-height: 1.7; border-left: 2px solid var(--gold); padding-left: 0.75rem; }
+.lunch-pre-mini + h2 { margin-top: 0.2rem; }
+.entrance-body p.lunch-flag { color: #1a1408; }
+.entrance-body p.lunch-pre-mini { color: #fff; }
+
+.lunch-pre-how { margin: -0.4rem 0 0.9rem; color: var(--gold); font-weight: 700; font-size: var(--step--1); }
+.lunch-pre .btn-row .btn { gap: 0.5rem; }
+.lunch-pre .btn svg { width: 1.1rem; height: 1.1rem; }
