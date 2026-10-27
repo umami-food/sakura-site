@@ -57,7 +57,7 @@ const jsonLd = {
     <div class="hero-copy">
       <a class="hero-award" href={site.award.url} target="_blank" rel="noopener">
         <img src={withBase('images/' + site.award.image)} alt={(h as any).awardAlt} width="400" height="400" />
-        <span class="award-m-text"><span class="eyebrow">Tabelog Award</span><span class="award-m-title">{(h as any).awardTitle}</span><span class="award-m-link">{(h as any).awardLink} →</span></span>
+        <span class="award-m-text"><span class="eyebrow">Tabelog Award</span><span class="award-m-title">{(h as any).awardTitle}</span><span class="award-m-link">{(h as any).awardLink}</span></span>
       </a>
       <h1 id="hero-title">{titleLines.map((parts) => <span class="line">{parts.map((part, i) => (i % 2 ? <span class="gold">{part}</span> : part))}</span>)}</h1>
       <div class="hero-rule" aria-hidden="true">
@@ -79,7 +79,7 @@ const jsonLd = {
       <div class="award-band-text">
         <p class="eyebrow">Tabelog Award</p>
         <p class="award-band-title">{(h as any).awardTitle}</p>
-        <a class="award-band-link" href={site.award.url} target="_blank" rel="noopener">{(h as any).awardLink} →</a>
+        <a class="award-band-link" href={site.award.url} target="_blank" rel="noopener">{(h as any).awardLink}</a>
       </div>
     </div>
   </section>
