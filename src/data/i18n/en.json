@@ -361,8 +361,11 @@
     "title": "Drinks",
     "lead": "Sake from across Japan, including regional brews, Japanese whisky, sours and highballs. All chosen to go well with Wagyu.",
     "plansTitle": "All-you-can-drink",
-    "more": "Full drink list on Hotpepper Gourmet (Japanese)",
-    "taxNote": "Prices include tax."
+    "taxNote": "All prices include tax.",
+    "listTitle": "Drinks à la carte",
+    "legend": "A = included in Standard All-You-Can-Drink　/　B = added in Premium (Premium includes both A and B)",
+    "rules": "Courses are 2 hours (last order at 90 minutes). For all-you-can-drink, please return your glass for a refill. We do not serve alcohol to anyone under 20 or to drivers.",
+    "from_": " and up"
   },
   "welcome": {
     "title": "Welcome, international guests",

@@ -47,14 +47,32 @@ const groups = order
           {drinks.plans.map((pl: any) => (
             <li class="course drink-plan">
               <div>
-                <h3>{pl.badge && <span class="course-badge">{pick(pl.badge, lang)}</span>}{pick(pl.name, lang)}</h3>
+                <h3>{pl.badge && <span class="course-badge">{pick(pl.badge, lang)}</span>}<span class={`plan-tag tag-${pl.tag}`}>{pl.tag}</span>{pick(pl.name, lang)}</h3>
                 <p>{pick(pl.desc, lang)}</p>
+                <p class="plan-includes">{pick(pl.includes, lang)}</p>
               </div>
               <p class="price"><strong>{yen(pl.price)}</strong><small>{d.ui.taxIncl}</small></p>
             </li>
           ))}
         </ul>
-        <p class="more-link"><a class="btn btn-ink" href={drinks.moreUrl} target="_blank" rel="noopener">{(d as any).drink.more}</a></p>
+        <p class="drink-rules">{(d as any).drink.rules}</p>
+
+        <h3 class="drink-plans-title drink-list-title">{(d as any).drink.listTitle}</h3>
+        <p class="drink-legend">{(d as any).drink.legend}</p>
+        <div class="drink-list">
+          {drinks.categories.map((c: any) => (
+            <section class="drink-cat">
+              <h4><span class={`plan-tag tag-${c.plan}`}>{c.plan}</span>{pick(c.title, lang)}</h4>
+              {c.note && <p class="drink-cat-note">{pick(c.note, lang)}</p>}
+              <ul>
+                {c.items.map((i: any) => (
+                  <li><span class="dn">{pick(i.name, lang)}</span><span class="dp">{yen(i.price)}{i.from ? (d as any).drink.from_ : ''}</span></li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+        <p class="muted drink-tax">{(d as any).drink.taxNote}</p>
       </section>
       <p class="muted" style="margin-top:1.5rem">{d.menu.note}</p>
     </div>
