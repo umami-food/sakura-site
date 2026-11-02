@@ -15,7 +15,8 @@
     "faq": "FAQ",
     "reserve": "Reservations",
     "welcome": "For international guests",
-    "recruit": "Careers"
+    "recruit": "Careers",
+    "privacy": "Privacy Policy"
   },
   "ui": {
     "reserve": "Book a table",
@@ -306,6 +307,10 @@
     "recruit": {
       "title": "Careers | 和牛すき焼きしゃぶしゃぶSakura 名古屋店",
       "description": "Full-time and part-time (lunch / dinner) positions at a Wagyu sukiyaki and shabu-shabu restaurant near Nagoya Station."
+    },
+    "privacy": {
+      "title": "Privacy Policy | 和牛すき焼きしゃぶしゃぶSakura 名古屋店",
+      "description": "How this website uses Google Analytics and links to external services."
     }
   },
   "notFound": {
@@ -414,5 +419,29 @@
     "partLead": "Our team is mostly in their teens and twenties. From plating Wagyu in the kitchen to serving international guests with a translation app, it's easy to get started.",
     "partCta": "View part-time openings (Japanese)",
     "pageTitle": "Careers"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Effective: November 3, 2026",
+    "sections": [
+      {
+        "title": "Analytics",
+        "body": "To understand how this website is used and to improve it, we use Google Analytics, a service provided by Google LLC. Google Analytics uses cookies to collect information such as the pages you view, time spent on the site, approximate region and device type. This information does not include anything that identifies you personally, such as your name or contact details."
+      },
+      {
+        "title": "Opting out",
+        "body": "You can stop this collection by disabling cookies in your browser or by installing the Google Analytics Opt-out Browser Add-on. For details on how Google handles this information, please see Google’s policy."
+      },
+      {
+        "title": "External services",
+        "body": "This website links to external services such as our reservation page (ebica), Instagram, Tabelog, Tripadvisor and job listing sites. Information you enter on those sites is handled under each service’s own policy."
+      },
+      {
+        "title": "Contact",
+        "body": "For questions about this policy, please contact us by phone."
+      }
+    ],
+    "googlePolicy": "Google Privacy Policy",
+    "optout": "Google Analytics Opt-out Browser Add-on"
   }
 }

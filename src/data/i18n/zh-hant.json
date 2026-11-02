@@ -15,7 +15,8 @@
     "faq": "常見問題",
     "reserve": "訂座",
     "welcome": "致海外客人",
-    "recruit": "招聘資訊"
+    "recruit": "招聘資訊",
+    "privacy": "私隱政策"
   },
   "ui": {
     "reserve": "立即訂座",
@@ -306,6 +307,10 @@
     "recruit": {
       "title": "招聘資訊｜和牛すき焼きしゃぶしゃぶSakura 名古屋店",
       "description": "名古屋站附近的和牛壽喜燒・涮涮鍋店，招聘正職員工及兼職（午餐／晚餐）。"
+    },
+    "privacy": {
+      "title": "私隱政策｜和牛すき焼きしゃぶしゃぶSakura 名古屋店",
+      "description": "關於本網站使用Google Analytics及外部服務的說明。"
     }
   },
   "notFound": {
@@ -414,5 +419,29 @@
     "partLead": "店內有許多十幾歲、二十幾歲的同齡員工。無論是廚房擺盤，還是借助翻譯應用程式接待海外客人，都能輕鬆上手。",
     "partCta": "查看兼職職位（日文）",
     "pageTitle": "招聘資訊"
+  },
+  "privacy": {
+    "title": "私隱政策",
+    "updated": "制定日期：2026年11月3日",
+    "sections": [
+      {
+        "title": "關於瀏覽分析",
+        "body": "為了解網站的使用情況並改善網站，本網站使用Google LLC提供的瀏覽分析工具「Google Analytics」。Google Analytics透過Cookie收集瀏覽的頁面、停留時間、大致地區及使用的裝置等資訊。這些資訊不包含姓名、聯絡方式等可識別個人身份的資訊。"
+      },
+      {
+        "title": "如不希望被收集",
+        "body": "您可於瀏覽器設定中停用Cookie，或使用Google提供的「Google Analytics停用瀏覽器外掛程式」以停止收集。關於Google如何處理這些資訊，請參閱Google的政策。"
+      },
+      {
+        "title": "關於外部服務",
+        "body": "本網站包含連往訂座頁面（ebica）、Instagram、Tabelog、Tripadvisor、招聘網站等外部服務的連結。您於這些網站輸入的資訊將依照各服務的政策處理。"
+      },
+      {
+        "title": "聯絡我們",
+        "body": "如對本政策有任何疑問，請致電本店。"
+      }
+    ],
+    "googlePolicy": "Google私隱權政策",
+    "optout": "Google Analytics停用瀏覽器外掛程式"
   }
 }

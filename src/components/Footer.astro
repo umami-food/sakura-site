@@ -32,6 +32,6 @@ const year = new Date().getFullYear();
         <ul>{LANGS.map((l) => <li><a href={pagePath(l, 'home')} lang={t(l).lang.html} hreflang={t(l).lang.html}>{t(l).lang.label}</a></li>)}</ul>
       </div>
     </div>
-    <p class="copyright">© {year} {site.name.en}</p>
+    <p class="copyright"><a class="footer-privacy" href={pagePath(lang, 'privacy')}>{(d.nav as any).privacy}</a>　© {year} {site.name.en}</p>
   </div>
 </footer>

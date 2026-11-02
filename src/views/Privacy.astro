@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import site from '../data/site.json';
+import { t, type Lang } from '../lib/i18n';
+const { lang } = Astro.props as { lang: Lang };
+const d = t(lang);
+const pv = (d as any).privacy;
+const hl = lang === 'zh-hans' ? 'zh-CN' : lang === 'zh-hant' ? 'zh-TW' : lang;
+---
+<Base lang={lang} page="privacy" title={(d.seo as any).privacy.title} description={(d.seo as any).privacy.description}>
+  <header class="page-head"><div class="wrap"><h1>{pv.title}</h1><p class="lead">{pv.updated}</p></div></header>
+  <section class="section"><div class="wrap prose-block">
+    {pv.sections.map((sec: any, i: number) => (
+      <section class="privacy-sec">
+        <h2>{sec.title}</h2>
+        <p>{sec.body}</p>
+        {i === 1 && <p class="privacy-links"><a href={`https://policies.google.com/technologies/partner-sites?hl=${hl}`} target="_blank" rel="noopener">{pv.googlePolicy}</a>　<a href={`https://tools.google.com/dlpage/gaoptout?hl=${hl}`} target="_blank" rel="noopener">{pv.optout}</a></p>}
+        {i === 3 && <p><a href={`tel:${site.phoneIntl}`}>{lang === 'ja' ? site.phone : site.phoneIntlDisplay}</a></p>}
+      </section>
+    ))}
+  </div></section>
+</Base>
