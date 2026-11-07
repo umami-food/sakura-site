@@ -856,3 +856,8 @@ p + p { margin-top: 1em; }
 .privacy-sec p + p { margin-top: 0.6rem; }
 .privacy-links a { color: var(--gold); }
 .footer-privacy { color: inherit; }
+
+/* 昼のサイトへのリンク */
+.lunch-site { margin-top: 1rem; }
+.entrance-extra { margin-top: 1rem; text-align: left; }
+.entrance-extra a { color: var(--gold); font-size: var(--step--1); border-bottom: 1px solid var(--line-strong); text-decoration: none; }

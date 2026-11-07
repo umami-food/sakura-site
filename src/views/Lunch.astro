@@ -37,6 +37,7 @@ const showPre = Date.now() <= Date.parse(lunch.preOpenUntil);
           <div><dt>{d.ui.phone}</dt><dd><a href={`tel:${site.phoneIntl}`}>{lang === 'ja' ? site.phone : site.phoneIntlDisplay}</a></dd></div>
         </dl>
         <p class="muted">{L.floor}</p>
+        <p class="lunch-site"><a class="btn btn-primary" href={lunch.officialSite} target="_blank" rel="noopener">{L.siteCta}</a></p>
         <p class="lunch-sns"><a href={lunch.instagram} target="_blank" rel="noopener"><InstagramIcon /> Instagram {lunch.instagramHandle}</a></p>
       </div>
       <img src={withBase('images/' + lunch.image)} alt={L.imageAlt} width="952" height="550" fetchpriority="high" />
